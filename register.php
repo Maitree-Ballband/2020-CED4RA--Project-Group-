@@ -55,29 +55,31 @@
 
 
 </head>
-<body>
-
+<body class="text-center">
 
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-  <div class="form-group">
-    <label for="username">username:</label>
-    <input type="text" class="form-control" placeholder="Enter username" id="username"required>
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" placeholder="Enter password" id="password"required>
-  </div>
-  <div class="form-group">
-    <label for="pwd">Firstname:</label>
-    <input type="Firstname" class="form-control" placeholder="Enter Firstname" id="Firstname"required>
-  </div>
-  <div class="form-group">
-    <label for="pwd">Lastname:</label>
-    <input type="Lastname" class="form-control" placeholder="Enter Lastname" id="Lastname"required>
-  </div>
-  <button type="submit" class="btn btn-primary">Login</button>
-  
-</form>
+        <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text"  name="username" placeholder="Enter your username" required>
+        </div>
+
+        <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password"  name="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="form-group">
+        <label for="firstname">Firstname</label>
+        <input type="text"  name="firstname" placeholder="Enter your firstname" required>
+        </div>
+
+        <div class="form-group">
+        <label for="lastname">Lastname</label>
+        <input type="text"  name="lastname" placeholder="Enter your lastname" required>
+        </div>
+        <input type="submit" name="submit" value="Submit">
+    
+    </form>
 
     <a href="index.php">Go back to index</a>
 

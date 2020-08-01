@@ -21,7 +21,7 @@
 
 
 </head>
-<body>
+<body class="text-center">
 
     <?php if (isset($_SESSION['success'])) : ?>
         <div class="success">
@@ -41,23 +41,23 @@
     <?php endif; ?>
 
 
-    <form action="login.php"method="post">
-  <div class="form-group">
-    <label for="username">username:</label>
-    <input type="text" class="form-control" placeholder="Enter username" id="username">
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" placeholder="Enter password" id="password">
-  </div>
-  <div class="form-group form-check">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox"> Remember me
-    </label>
-  </div>
-  <button type="submit" class="btn btn-primary">Login</button>
-  
-</form>
+   
+    <form action="login.php" method="post">
+    
+        <div class="form-group">
+        <label for="username">ชื่อผู้ใช้</label>
+        <input type="text" name="username" placeholder="Username" required>
+        </div>
+
+        <div class="form-group">
+        <label for="password">รหัสผ่าน</label>
+        <input type="password" name="password" placeholder="Password" required>
+        </div>
+        
+        <input type="submit" name="submit" value="Login">
+        
+    </form>
+
 <a href="register.php">Go to register</a>
 
 
